@@ -1,33 +1,33 @@
 ﻿<Properties StartupConfiguration="{7EFA0A3E-2679-4985-BC47-D1E6CF85BA29}|Default">
   <MonoDevelop.Ide.ItemProperties.NETCore__Angular__AwesomeApps PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NETCore_Angular_AwesomeApps/Migrations/MvcMovieContextModelSnapshot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NETCore_Angular_AwesomeApps/appsettings.json">
     <Files>
       <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/index.html" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.component.html" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/home/home.component.html" Line="15" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.component.css" Line="7" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.component.ts" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.module.ts" Line="33" Column="3" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/fetch-data/fetch-data.component.html" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/fetch-data/fetch-data.component.ts" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/counter/counter.component.html" Line="8" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/Program.cs" Line="23" Column="13" />
-      <File FileName="NETCore_Angular_AwesomeApps/Startup.cs" Line="80" Column="67" />
-      <File FileName="NETCore_Angular_AwesomeApps/Controllers/SampleDataController.cs" Line="17" Column="26" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/environments/environment.ts" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/environments/environment.prod.ts" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/nav-menu/nav-menu.component.html" Line="24" Column="10" />
-      <File FileName="NETCore_Angular_AwesomeApps/Properties/launchSettings.json" Line="27" Column="2" />
-      <File FileName="NETCore_Angular_AwesomeApps/Models/Movie.cs" Line="12" Column="13" />
-      <File FileName="NETCore_Angular_AwesomeApps/Models/MvcMovieContext.cs" Line="18" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/Models/ErrorViewModel.cs" Line="8" Column="71" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.component.html" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/home/home.component.html" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.component.css" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.component.ts" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.module.ts" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/fetch-data/fetch-data.component.html" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/fetch-data/fetch-data.component.ts" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/counter/counter.component.html" />
+      <File FileName="NETCore_Angular_AwesomeApps/Program.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/Startup.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/Controllers/SampleDataController.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/environments/environment.ts" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/environments/environment.prod.ts" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/nav-menu/nav-menu.component.html" />
+      <File FileName="NETCore_Angular_AwesomeApps/Properties/launchSettings.json" />
+      <File FileName="NETCore_Angular_AwesomeApps/Models/Movie.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/Models/MvcMovieContext.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/Models/ErrorViewModel.cs" />
       <File FileName="NETCore_Angular_AwesomeApps/appsettings.json" Line="12" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/Pages/Error.cshtml" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/angular.json" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/Controllers/MoviesController.cs" Line="118" Column="30" />
-      <File FileName="NETCore_Angular_AwesomeApps/Migrations/20190904013704_Initial.cs" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/Migrations/20190904013704_Initial.Designer.cs" Line="1" Column="1" />
-      <File FileName="NETCore_Angular_AwesomeApps/Migrations/MvcMovieContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="NETCore_Angular_AwesomeApps/Pages/Error.cshtml" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/angular.json" />
+      <File FileName="NETCore_Angular_AwesomeApps/Controllers/MoviesController.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/Migrations/20190904013704_Initial.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/Migrations/20190904013704_Initial.Designer.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/Migrations/MvcMovieContextModelSnapshot.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -35,10 +35,9 @@
           <Node name="NETCore_Angular_AwesomeApps" expanded="True">
             <Node name="NETCore_Angular_AwesomeApps" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Migrations" expanded="True">
-                <Node name="MvcMovieContextModelSnapshot.cs" selected="True" />
-              </Node>
+              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
