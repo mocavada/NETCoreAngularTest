@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{7EFA0A3E-2679-4985-BC47-D1E6CF85BA29}|Default">
   <MonoDevelop.Ide.ItemProperties.NETCore__Angular__AwesomeApps PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NETCore_Angular_AwesomeApps/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NETCore_Angular_AwesomeApps/ClientApp/src/environments/environment.prod.ts">
     <Files>
       <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/index.html" Line="1" Column="1" />
       <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.component.html" />
@@ -15,29 +15,38 @@
       <File FileName="NETCore_Angular_AwesomeApps/Startup.cs" />
       <File FileName="NETCore_Angular_AwesomeApps/Controllers/SampleDataController.cs" />
       <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/environments/environment.ts" />
-      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/environments/environment.prod.ts" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/environments/environment.prod.ts" Line="4" Column="1" />
       <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/nav-menu/nav-menu.component.html" />
       <File FileName="NETCore_Angular_AwesomeApps/Properties/launchSettings.json" />
       <File FileName="NETCore_Angular_AwesomeApps/Models/Movie.cs" />
       <File FileName="NETCore_Angular_AwesomeApps/Models/MvcMovieContext.cs" />
       <File FileName="NETCore_Angular_AwesomeApps/Models/ErrorViewModel.cs" />
-      <File FileName="NETCore_Angular_AwesomeApps/appsettings.json" Line="12" Column="1" />
+      <File FileName="NETCore_Angular_AwesomeApps/appsettings.json" />
       <File FileName="NETCore_Angular_AwesomeApps/Pages/Error.cshtml" />
       <File FileName="NETCore_Angular_AwesomeApps/ClientApp/angular.json" />
       <File FileName="NETCore_Angular_AwesomeApps/Controllers/MoviesController.cs" />
       <File FileName="NETCore_Angular_AwesomeApps/Migrations/20190904013704_Initial.cs" />
       <File FileName="NETCore_Angular_AwesomeApps/Migrations/20190904013704_Initial.Designer.cs" />
       <File FileName="NETCore_Angular_AwesomeApps/Migrations/MvcMovieContextModelSnapshot.cs" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/e2e/tsconfig.e2e.json" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/e2e/protractor.conf.js" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NETCore_Angular_AwesomeApps" expanded="True">
             <Node name="NETCore_Angular_AwesomeApps" expanded="True">
+              <Node name="ClientApp" expanded="True">
+                <Node name="e2e" expanded="True" />
+                <Node name="src" expanded="True">
+                  <Node name="environments" expanded="True">
+                    <Node name="environment.prod.ts" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>

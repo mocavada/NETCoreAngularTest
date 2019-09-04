@@ -1,0 +1,33 @@
+
+
+<div class="row">
+<form [formGroup]="editMovieForm" (ngSubmit)="onUpdate(editMovieForm)" novalidate>
+  <div class="col pt-5">
+    <button class="btn btn-outline-success mb-5" *ngIf="!isEdit" type="submit" (click)="cancelMode()">
+        <span class="glyphicon glyphicon-play" aria-hidden="true">Save</span>
+    </button>
+    <h3 class="text-success mb-5" *ngIf="isEdit">Edit Movie</h3>
+
+    <h3 class="mb-2" *ngIf="!isEdit"><small>Title:  </small>{{ movie?.title}}</h3>
+    <h3 class="mb-2" *ngIf="isEdit"><small>Title:  </small><input [(ngModel)]="movie.title" AutoSizeInput/></h3>
+
+    <h4 class="mb-2" *ngIf="!isEdit"><small>Genre:  </small>{{ movie?.genre}}</h4>
+    <h4 class="mb-2" *ngIf="isEdit"><small>Genre:  </small><input [(ngModel)]="movie.genre" AutoSizeInput/></h4>
+
+    <h4 class="mb-2" *ngIf="!isEdit"><small>Release Date:  </small>{{ movie?.releaseDate | date:'y MMM d'}}</h4>
+    <h4 class="mb-2" *ngIf="isEdit"><small>Release Date:  </small><input class="datepicker" type="date" data-date-format="y/MMM/d" [(ngModel)]="movie.releaseDate" AutoSizeInput/></h4>
+
+    <h4 class="mb-3" *ngIf="!isEdit"><small>Price:  </small>{{ movie?.price | currency: 'CAD'}}</h4>
+    <h4 class="mb-3" *ngIf="isEdit"><small>Price:  </small><input [(ngModel)]="movie.price" AutoSizeInput/></h4>
+
+    <button class="" *ngIf="!isEdit" type="button" class="btn btn btn-info" (click)="editMode()">
+        <span class="glyphicon glyphicon-play" aria-hidden="true">Edit</span>
+    </button>
+
+    <button class="" *ngIf="isEdit" type="button" class="btn btn-warning" (click)="cancelMode()">
+        <span class="glyphicon glyphicon-play" aria-hidden="true">Done</span>
+    </button>
+
+  </div>
+</form>
+</div>

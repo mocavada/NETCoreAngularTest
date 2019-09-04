@@ -10,23 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieAddComponent implements OnInit {
 
-  movies: Movie[];
 
-  constructor(private movieService: MovieApiService) { }
+
+  constructor() { }
 
   ngOnInit() {
 
-    this.movieService.movieResult$
-    .subscribe(data => {
-      if(data != null) {
-        this.movies = data;
-        console.log('Success');
-        console.log(this.movies);
-      }
-    });
-
-    this.movieService.getMovies();
-    console.log(this.movies);
   }
 
 }
