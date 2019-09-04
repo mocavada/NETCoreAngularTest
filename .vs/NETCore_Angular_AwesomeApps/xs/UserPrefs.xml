@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{7EFA0A3E-2679-4985-BC47-D1E6CF85BA29}|Default">
+  <MonoDevelop.Ide.ItemProperties.NETCore__Angular__AwesomeApps PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NETCore_Angular_AwesomeApps/ClientApp/src/app/home/home.component.html">
+    <Files>
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/index.html" Line="1" Column="1" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/app.component.html" Line="1" Column="1" />
+      <File FileName="NETCore_Angular_AwesomeApps/ClientApp/src/app/home/home.component.html" Line="15" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NETCore_Angular_AwesomeApps" expanded="True">
+            <Node name="NETCore_Angular_AwesomeApps" expanded="True">
+              <Node name="ClientApp" expanded="True">
+                <Node name="src" expanded="True">
+                  <Node name="app" expanded="True">
+                    <Node name="home" expanded="True">
+                      <Node name="home.component.html" selected="True" />
+                    </Node>
+                    <Node name="nav-menu" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
