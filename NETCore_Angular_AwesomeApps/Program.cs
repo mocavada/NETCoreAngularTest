@@ -19,6 +19,7 @@ namespace NETCore_Angular_AwesomeApps
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+            .UseUrls("http://localhost:5000")
+            .UseStartup<Startup>();
     }
 }
