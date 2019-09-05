@@ -13,9 +13,9 @@ namespace NETCore_Angular_AwesomeApps.Controllers
     public class MoviesController : Controller
     {
 
-        private readonly MvcMovieContext _context;
+        private readonly AwesomeAppsContext _context;
 
-        public MoviesController(MvcMovieContext context)
+        public MoviesController(AwesomeAppsContext context)
         {
             _context = context;
         }

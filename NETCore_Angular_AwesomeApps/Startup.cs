@@ -33,8 +33,8 @@ namespace NETCore_Angular_AwesomeApps
             });
 
             // Database Config:
-            services.AddDbContext<MvcMovieContext>(options =>
-            options.UseMySql(Configuration.GetConnectionString("MovieContext")));
+            services.AddDbContext<AwesomeAppsContext>(options =>
+            options.UseMySql(Configuration.GetConnectionString("DBContext")));
 
             // MVC Config:
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

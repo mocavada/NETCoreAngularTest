@@ -1,0 +1,39 @@
+.cosmos-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+  margin: 0px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ),
+  url('https://xanmia.github.io/Light-Speed-Ready/images/starb.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.greetings {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-align:center;
+  right: 5px;
+}
+.greetings img {
+  width: 10%;
+  margin-bottom: 10px;
+}
+.greetings h1 {
+  font-weight: 300;
+  font-size: 3.5em;
+}
+.greetings p {
+  color: #ababab;
+  font-size: 18px;
+}
+
+.greetings p, .greetings h1, .greetings h2, .greetings h3 {
+
+  font-family: futura-pt, sans-serif;
+}

@@ -1,11 +1,14 @@
 
 
 <div class="row">
-<form [formGroup]="editMovieForm" (ngSubmit)="onUpdate(editMovieForm)" novalidate>
+<!-- <form [formGroup]="editMovieForm" (ngSubmit)="onUpdate(editMovieForm)" novalidate> -->
   <div class="col pt-5">
-    <button class="btn btn-outline-success mb-5" *ngIf="!isEdit" type="submit" (click)="cancelMode()">
+
+    <button class="btn btn-outline-success mb-5" *ngIf="!isEdit" type="button"
+    (click)="submitEditedMovie(movie)">
         <span class="glyphicon glyphicon-play" aria-hidden="true">Save</span>
     </button>
+
     <h3 class="text-success mb-5" *ngIf="isEdit">Edit Movie</h3>
 
     <h3 class="mb-2" *ngIf="!isEdit"><small>Title:  </small>{{ movie?.title}}</h3>
@@ -14,11 +17,11 @@
     <h4 class="mb-2" *ngIf="!isEdit"><small>Genre:  </small>{{ movie?.genre}}</h4>
     <h4 class="mb-2" *ngIf="isEdit"><small>Genre:  </small><input [(ngModel)]="movie.genre" AutoSizeInput/></h4>
 
-    <h4 class="mb-2" *ngIf="!isEdit"><small>Release Date:  </small>{{ movie?.releaseDate | date:'y MMM d'}}</h4>
+    <h4 class="mb-2" *ngIf="!isEdit"><small>Release Date:  </small>{{ movie?.releaseDate | date:'y MMMM d'}}</h4>
     <h4 class="mb-2" *ngIf="isEdit"><small>Release Date:  </small><input class="datepicker" type="date" data-date-format="y/MMM/d" [(ngModel)]="movie.releaseDate" AutoSizeInput/></h4>
 
-    <h4 class="mb-3" *ngIf="!isEdit"><small>Price:  </small>{{ movie?.price | currency: 'CAD'}}</h4>
-    <h4 class="mb-3" *ngIf="isEdit"><small>Price:  </small><input [(ngModel)]="movie.price" AutoSizeInput/></h4>
+    <h4 class="mb-5" *ngIf="!isEdit"><small>Price:  </small>{{ movie?.price | currency: 'CAD'}}</h4>
+    <h4 class="mb-5" *ngIf="isEdit"><small>Price:  </small><input [(ngModel)]="movie.price" AutoSizeInput/></h4>
 
     <button class="" *ngIf="!isEdit" type="button" class="btn btn btn-info" (click)="editMode()">
         <span class="glyphicon glyphicon-play" aria-hidden="true">Edit</span>
@@ -28,6 +31,26 @@
         <span class="glyphicon glyphicon-play" aria-hidden="true">Done</span>
     </button>
 
+
+
   </div>
-</form>
+
+  <!-- <form class="form-inline">
+      <div class="form-group">
+        <div class="input-group">
+          <input class="form-control" placeholder="yyyy-mm-dd"
+                 name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <hr/>
+    <pre>Model: {{ model | json }}</pre>
+     -->
+
+
+
 </div>

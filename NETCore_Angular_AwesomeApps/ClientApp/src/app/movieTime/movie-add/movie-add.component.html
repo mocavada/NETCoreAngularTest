@@ -1,0 +1,35 @@
+<div class="row pt-5">
+  <div class="col">
+      <div class="example-container">
+          <mat-form-field>
+            <h4>Movie Title</h4>
+            <input matInput placeholder="">
+          </mat-form-field>
+
+          <mat-form-field>
+            <h4>Genre</h4>
+            <input matInput placeholder="">
+          </mat-form-field>
+
+          <mat-form-field>
+              <h4>Price</h4>
+              <input matInput placeholder="">
+          </mat-form-field>
+
+          <mat-form-field>
+              <h4>Release Date</h4>
+              <input matInput [matDatepicker]="picker" placeholder="">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+        </div>
+  </div>
+</div>
+
+
+<!-- <mat-form-field>
+    <mat-select placeholder="Select">
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field> -->

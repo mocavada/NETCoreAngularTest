@@ -4,6 +4,8 @@ import { Movie } from '../models/movie';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import * as $ from 'jquery';
+
 
 
 @Component({
@@ -29,7 +31,12 @@ export class MovieDetailsComponent implements OnInit {
         const id = params.get('id');
         this.getMovie(id);
       }
-    )
+    );
+
+    $(function() {
+        console.log('JQuery Ready');
+    });
+
   }
 
   getMovie(id: any): void {
@@ -50,8 +57,17 @@ export class MovieDetailsComponent implements OnInit {
     this.isEdit = false;
   }
 
-  onUpdate(f: any) {
+  submitEditedMovie(item: Movie) {
+    console.log(item);
+    console.log('Click');
 
+    this.movieService.editMovie(item)
+    .subscribe(data => {
+      console.log('Update Successfully');
+      this.isEdit = false;
+    }, err => {
+      console.log('Something went wrong!');
+    });
   }
 
 

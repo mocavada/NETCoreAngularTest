@@ -5,8 +5,6 @@ import { BehaviorSubject, Subject, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -17,7 +15,6 @@ movieResult$ = new BehaviorSubject<[Movie]>(null);
 
 constructor(private http: HttpClient,
           ) { }
-
 
 getMovies() {
   this.http.get<[Movie]>(this.moviesApiUrl)
@@ -30,7 +27,10 @@ getMovies() {
 
 getMovieById(id: number) {
   return this.http.get(this.moviesApiUrl + '/' + id );
+}
 
+editMovie(movie: Movie) {
+  return this.http.put<any>(this.moviesApiUrl + '/' + movie.id, movie);
 }
 
 }

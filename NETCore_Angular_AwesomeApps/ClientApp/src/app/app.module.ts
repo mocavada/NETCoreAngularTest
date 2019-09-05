@@ -1,23 +1,33 @@
-import { MovieDetailsComponent } from './movie-app/movie-details/movie-details.component';
-import { MovieAddComponent } from './movie-app/movie-add/movie-add.component';
-import { MovieListComponent } from './movie-app/movie-list/movie-list.component';
+import { CosmosThreejsComponent } from './cosmos-threejs/cosmos-threejs.component';
+import { EngineThreejsComponent } from './engine-threejs/engine-threejs.component';
+import { MovieDetailsComponent } from './movieTime/movie-details/movie-details.component';
+import { MovieAddComponent } from './movieTime/movie-add/movie-add.component';
+import { MovieListComponent } from './movieTime/movie-list/movie-list.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatCardModule} from '@angular/material/card';
 
-
+// ANGULAR MATERIAL
+import {
+  MatButtonModule,
+  MatGridListModule,
+  MatCheckboxModule,
+  MatTabsModule,
+  MatFormFieldModule,
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatInputModule,
+  MatPaginatorModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -28,21 +38,36 @@ import {MatCardModule} from '@angular/material/card';
     FetchDataComponent,
     MovieListComponent,
     MovieAddComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    EngineThreejsComponent,
+    CosmosThreejsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule, BrowserAnimationsModule,
     FormsModule, ReactiveFormsModule,
-    MatButtonModule, MatCheckboxModule, MatCardModule,
+    // Material
+    MatButtonModule,
+    MatCheckboxModule,
+    MatTabsModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: CosmosThreejsComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'movie-list', component: MovieListComponent },
       { path: 'movie-add', component: MovieAddComponent },
-      { path: 'movie/:id', component: MovieDetailsComponent }
-    ])
+      { path: 'movie/:id', component: MovieDetailsComponent },
+      { path: 'engine3D', component: EngineThreejsComponent },
+      { path: 'cosmos3D', component: CosmosThreejsComponent },
+    ]),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
