@@ -1,5 +1,4 @@
 import { CosmosThreejsComponent } from './cosmos-threejs/cosmos-threejs.component';
-import { EngineThreejsComponent } from './engine-threejs/engine-threejs.component';
 import { MovieDetailsComponent } from './movieTime/movie-details/movie-details.component';
 import { MovieAddComponent } from './movieTime/movie-add/movie-add.component';
 import { MovieListComponent } from './movieTime/movie-list/movie-list.component';
@@ -39,7 +38,6 @@ import {
     MovieListComponent,
     MovieAddComponent,
     MovieDetailsComponent,
-    EngineThreejsComponent,
     CosmosThreejsComponent
   ],
   imports: [
@@ -64,7 +62,6 @@ import {
       { path: 'movie-list', component: MovieListComponent },
       { path: 'movie-add', component: MovieAddComponent },
       { path: 'movie/:id', component: MovieDetailsComponent },
-      { path: 'engine3D', component: EngineThreejsComponent },
       { path: 'cosmos3D', component: CosmosThreejsComponent },
     ]),
 
